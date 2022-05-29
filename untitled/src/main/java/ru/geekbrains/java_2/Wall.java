@@ -6,5 +6,8 @@ public class Wall {
     }
 
     int height;
+    Wall wall = new Wall(2);
+    Wall wall1 = new Wall(8);
+
 
 }

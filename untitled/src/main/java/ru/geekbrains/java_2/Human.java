@@ -10,4 +10,7 @@ public class Human {
         this.maxJump = maxJump;
         this.maxRun = maxRun;
     }
+    Human human = new Human("Ivan",4,50);
+    Human human1 = new Human("Mariya",2,30);
+
 }

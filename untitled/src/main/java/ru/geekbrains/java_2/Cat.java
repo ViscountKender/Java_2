@@ -9,5 +9,8 @@ public class Cat {
         this.name = name;
         this.maxJump = maxJump;
         this.maxRun = maxRun;
+
     }
+    Cat cat = new Cat("Barsik",5,10);
+    Cat cat1 = new Cat("Tiger",6,12);
 }

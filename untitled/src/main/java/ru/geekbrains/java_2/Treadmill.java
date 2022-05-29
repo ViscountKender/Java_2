@@ -6,4 +6,8 @@ public class Treadmill {
     public Treadmill(int length) {
         this.length = length;
     }
+    Treadmill treadmill = new Treadmill(20);
+    Treadmill treadmill1 = new Treadmill(40);
+
+
 }

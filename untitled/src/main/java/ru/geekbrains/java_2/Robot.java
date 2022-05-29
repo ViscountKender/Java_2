@@ -10,4 +10,6 @@ public class Robot {
         this.maxJump = maxJump;
         this.maxRun = maxRun;
     }
+    Robot robot = new Robot("Gromazeka",4,20);
+    Robot robot1 = new Robot("Zeleboba",15,12);
 }
