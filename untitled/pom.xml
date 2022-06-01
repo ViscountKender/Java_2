@@ -8,8 +8,9 @@
     <artifactId>untitled</artifactId>
     <version>1.0-SNAPSHOT</version>
     <properties>
-    <maven.compiler.source>1.8</maven.compiler.source>
-    <maven.comoiler.target>1.8</maven.comoiler.target>
+        <maven.compiler.source>18</maven.compiler.source>
+        <maven.comoiler.target>18</maven.comoiler.target>
+        <maven.compiler.target>18</maven.compiler.target>
 
     </properties>
 
