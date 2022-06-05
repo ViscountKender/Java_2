@@ -13,7 +13,9 @@ public class  main  {
         phonebook.add("Сидоров", "+79300000");
         phonebook.add("Кузнецова", "+79303333");
         phonebook.add("Иванов", "+79304444");
+        phonebook.add("Петров", "+79305555");
         phonebook.get("Иванов");
+        phonebook.get("Петров");
 
     }
 
