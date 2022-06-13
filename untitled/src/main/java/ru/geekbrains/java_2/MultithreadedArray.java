@@ -8,10 +8,10 @@ public class MultithreadedArray extends Thread {
         float[] rightHalf = new float[half];
         System.arraycopy(arr, 0, leftHalf, 0, half);
         System.arraycopy(arr, half, rightHalf, 0, half);
-        MyThreads myThreads = new MyThreads();
+        MyThreard myThreads = new MyThreard();
         myThreads.arr = leftHalf;
         myThreads.start();
-        MyThreads myThreads1 = new MyThreads();
+        MyThreard myThreads1 = new MyThreard();
         myThreads1.arr = rightHalf;
         myThreads1.start();
         myThreads.join();
