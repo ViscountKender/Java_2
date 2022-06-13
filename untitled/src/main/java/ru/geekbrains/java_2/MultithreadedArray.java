@@ -18,8 +18,8 @@ public class MultithreadedArray extends Thread {
         myThreads1.join();
 
         float[] mergedArray = new float[arr.length];
-        System.arraycopy(myThreads.arr, 0, mergedArray, 0, half);
-        System.arraycopy(myThreads1.arr, 0, mergedArray, half, half);
+        System.arraycopy(leftHalf, 0, mergedArray, 0, half);
+        System.arraycopy(rightHalf, 0, mergedArray, half, half);
 
         System.out.println("Второй метод за время: " + (System.currentTimeMillis() -
                 startTime) + " мс.");
