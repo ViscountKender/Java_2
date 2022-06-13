@@ -14,8 +14,8 @@ public class App05 {
         }
         MultithreadedArray multithreadedArray = new MultithreadedArray();
         multithreadedArray.secondMethod(array);
-        Array?reation array?reation = new Array.reation();
-        array?reation.creation(array);
+        ArrayСreation arraycreationreation = new ArrayСreation();
+        arraycreationreation.creation(array);
 
 
 
