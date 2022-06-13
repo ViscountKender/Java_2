@@ -1,6 +1,5 @@
 package ru.geekbrains.java_2;
 
-import java.util.Arrays;
 
 public class App05 {
 
