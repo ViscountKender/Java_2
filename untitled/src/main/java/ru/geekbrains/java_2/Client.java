@@ -6,13 +6,13 @@ import java.io.IOException;
 import java.net.Socket;
 import java.util.Scanner;
 
-public class EchoClient {
+public class Client {
     private Socket socket;
     private DataInputStream in;
     private DataOutputStream out;
 
     public static void main(String[] args) {
-        new EchoClient().start();
+        new Client().start();
 
 
     }
@@ -41,19 +41,19 @@ public class EchoClient {
 
 
     private void openConnection() throws IOException {
-        socket = new Socket("127.0.0.1",8189);
+        socket = new Socket("127.0.0.1",8198);
         in = new DataInputStream(socket.getInputStream());
         out = new DataOutputStream(socket.getOutputStream());
         new Thread(() -> {
             try {
                 while (true){
-                final String message = in.readUTF();
-                if("/end".equalsIgnoreCase(message)){
-                    break;
+                    final String message = in.readUTF();
+                    if("/end".equalsIgnoreCase(message)){
+                        break;
                     }
                     System.out.println("Сообщение от сервера: " + message);
-            }
-        } catch (IOException e) {
+                }
+            } catch (IOException e) {
                 e.printStackTrace();
             } finally {
                 closeConnection();
